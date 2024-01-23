@@ -1,0 +1,44 @@
+#clock-container {
+    margin-top: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.918);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(180deg, rgb(196, 182, 182) 20%,rgba(218, 220, 225, 0.5) 30%, rgba(200, 204, 212, 0.5) 35%, red );
+}
+#clock span {
+    position: absolute;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 12px;
+    text-align: center;
+}
+#clock span i {
+    transform: rotate(calc(-30deg * var(--j)));
+    display: inline-block;
+    font-size: 20px;
+    font-style: normal;
+    text-shadow: 1px 1px 0px rgb(0 0 0 / 25%);
+    color: #000000;
+}
+#clock .hand {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+#clock .hand i {
+    position: absolute;
+    background-color: var(--color);
+    width: var(--width);
+    height: var(--height);
+    border-radius: 8px;
+}
